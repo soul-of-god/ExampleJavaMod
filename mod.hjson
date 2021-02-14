@@ -1,8 +1,6 @@
-name: "example-java-mod"
-displayName: "Example Java Mod"
+name: "example-java-mod"name: "LightGlories"
 author: "Anuke"
-main: "example.ExampleJavaMod"
+main: "lightglories.LightGlories"
 description: "A jar mod."
 version: 1.0
 minGameVersion: 105
-
