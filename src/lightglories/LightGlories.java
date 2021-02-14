@@ -12,8 +12,8 @@ import mindustry.mod.Mods.*;
 import lightglories.content.*;
 
 public class LightGlories extends Mod{
-    public static final String githubURL = "https://github.com/sk7725/BetaMindy";
-    public static final String shortName = "[#b59e72]Demo of Chaos Itself[]";
+    public static final String githubURL = "XXX";
+    public static final String shortName = "xXX";
     public static SettingAdder settingAdder = new SettingAdder();
     public static XeloUtil pushUtil = new XeloUtil();
     public static MobileFunctions mobileUtil = new MobileFunctions();
@@ -39,24 +39,6 @@ public class LightGlories extends Mod{
         Events.on(ClientLoadEvent.class, e -> {
             settingAdder.init();
         });
-    }
-
-    @Override
-    public void init(){
-        Vars.enableConsole = true;
-
-        LoadedMod mod = Vars.mods.locateMod("LightGlories");
-        if(!Vars.headless){
-            //Partial credits to ProjectUnity
-
-            Func<String, String> stringf = value -> Core.bundle.get("mod." + value);
-
-            mod.meta.displayName = stringf.get(mod.meta.name + ".name");
-            mod.meta.description = stringf.get(mod.meta.name + ".description");
-
-            mod.meta.author = "[royal]" + mod.meta.author + "[]";
-        }
-        mod.meta.version = mod.meta.version + "\n" + shortName;
     }
 
     @Override
